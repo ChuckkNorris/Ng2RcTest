@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var login_1 = require('./PAGES/login');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -17,7 +19,11 @@ var AppComponent = (function () {
             moduleId: 'app/',
             selector: 'my-app',
             templateUrl: 'app.component.html',
-        }), 
+            directives: [router_1.ROUTER_DIRECTIVES]
+        }),
+        router_1.Routes([
+            { path: 'login', component: login_1.LoginPage }
+        ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;

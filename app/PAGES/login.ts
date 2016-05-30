@@ -6,5 +6,5 @@ import {Component} from '@angular/core';
     templateUrl: 'login.html'
 })
 export class LoginPage {
-    hello: string = "Kill Them All";
+    hello: string = "You got yourself a login page, sir";
 }

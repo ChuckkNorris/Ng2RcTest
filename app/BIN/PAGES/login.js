@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var LoginPage = (function () {
     function LoginPage() {
-        this.hello = "Kill Them All";
+        this.hello = "You got yourself a login page, sir";
     }
     LoginPage = __decorate([
         core_1.Component({
