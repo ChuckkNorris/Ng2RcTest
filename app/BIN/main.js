@@ -1,8 +1,8 @@
 "use strict";
 var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var export_1 = require('./export');
+var app_component_1 = require('./app.component');
 var router_1 = require('@angular/router');
-platform_browser_dynamic_1.bootstrap(export_1.AppComponent, [
+platform_browser_dynamic_1.bootstrap(app_component_1.AppComponent, [
     router_1.ROUTER_DIRECTIVES,
     router_1.ROUTER_PROVIDERS
 ]);
