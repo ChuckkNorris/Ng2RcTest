@@ -34,7 +34,8 @@ public void CreateExports() {
                 // RelativepathToExportDirectory = './app/templates/template-one.component'
                 // ClassName = 'TemplateOneComponent' (Parsed from file contents, works with interfaces)
             ExportEntry toAdd = CreateExportEntry(file, exportDirPathFixed, rootDir);
-            exportEntriesToWrite.Add(toAdd);
+            if (toAdd != null)
+                exportEntriesToWrite.Add(toAdd);
         }
         CreateExportFile(exportDir.FullName + "\\" + exportFileName, exportEntriesToWrite);
         
@@ -57,6 +58,8 @@ private ExportEntry CreateExportEntry(FileInfo exportFile, string exportDirPath,
         ClassName = GetFirstExportClassName(exportFile),
         RelativepathToExportDirectory = exportFile.FullName.Remove(0, rootDir.Length + exportDirPath.Length).Replace(".ts", ""),
     };
+    if (String.IsNullOrWhiteSpace(toReturn.ClassName))
+        toReturn = null;
     return toReturn;
 
 }

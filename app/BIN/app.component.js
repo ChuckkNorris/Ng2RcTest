@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var login_1 = require('./PAGES/login');
+var export_1 = require('./export');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -22,7 +22,8 @@ var AppComponent = (function () {
             directives: [router_1.ROUTER_DIRECTIVES]
         }),
         router_1.Routes([
-            { path: 'login', component: login_1.LoginPage }
+            { path: 'login', component: export_1.LoginPage },
+            { path: 'addcandidate', component: export_1.AddCandidatePage }
         ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

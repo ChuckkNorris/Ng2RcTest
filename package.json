@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "export": "scriptcs exporter.csx -- app/TEMPLATES app/CONTROLS app/PAGES app/MODELS app/SERVICES"
+    "export": "scriptcs exporter.csx -- app"
   },
   "license": "ISC",
   "dependencies": {
