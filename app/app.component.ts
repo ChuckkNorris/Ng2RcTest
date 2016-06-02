@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Routes, ROUTER_DIRECTIVES } from '@angular/router';
 import { LoginPage, AddCandidatePage } from './export';
+
 
 @Component({
   moduleId: 'app/',
@@ -12,6 +13,8 @@ import { LoginPage, AddCandidatePage } from './export';
   {path: 'login', component: LoginPage},
   {path: 'addcandidate', component: AddCandidatePage}
 ])
-export class AppComponent { 
-    
+export class AppComponent implements OnInit { 
+    ngOnInit() {
+       $(".button-collapse").sideNav();
+    }
 }

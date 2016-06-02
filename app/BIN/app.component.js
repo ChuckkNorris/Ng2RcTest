@@ -14,6 +14,9 @@ var export_1 = require('./export');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+        $(".button-collapse").sideNav();
+    };
     AppComponent = __decorate([
         core_1.Component({
             moduleId: 'app/',

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 
+
 @Component({
     moduleId: 'app/PAGES/login-page/',
     selector: 'login-page',
