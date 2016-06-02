@@ -7,6 +7,7 @@ import { LoginPage, AddCandidatePage } from './export';
   moduleId: 'app/',
   selector: 'my-app',
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 @Routes([
@@ -15,6 +16,7 @@ import { LoginPage, AddCandidatePage } from './export';
 ])
 export class AppComponent implements OnInit { 
     ngOnInit() {
+      // Enable Mobile Menu
        $(".button-collapse").sideNav();
     }
 }

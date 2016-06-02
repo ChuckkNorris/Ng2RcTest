@@ -15,6 +15,7 @@ var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngOnInit = function () {
+        // Enable Mobile Menu
         $(".button-collapse").sideNav();
     };
     AppComponent = __decorate([
@@ -22,6 +23,7 @@ var AppComponent = (function () {
             moduleId: 'app/',
             selector: 'my-app',
             templateUrl: 'app.component.html',
+            styleUrls: ['app.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES]
         }),
         router_1.Routes([
