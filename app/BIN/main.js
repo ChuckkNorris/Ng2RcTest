@@ -7,6 +7,7 @@ var export_1 = require('./export');
 platform_browser_dynamic_1.bootstrap(app_component_1.AppComponent, [
     router_1.ROUTER_DIRECTIVES,
     router_1.ROUTER_PROVIDERS,
-    core_1.provide(core_1.PLATFORM_DIRECTIVES, { useValue: export_1.UxButton, multi: true })
+    core_1.provide(core_1.PLATFORM_DIRECTIVES, { useValue: export_1.UxButton, multi: true }),
+    core_1.provide(core_1.PLATFORM_DIRECTIVES, { useValue: export_1.UxText, multi: true })
 ]);
 //# sourceMappingURL=main.js.map
