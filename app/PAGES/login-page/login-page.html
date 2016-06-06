@@ -1,7 +1,8 @@
 <div>
     {{hello}}
     <ux-button (click)="dostuff()" [icon]="'send'" [text]="'Submit'"></ux-button>
-    <ux-text (click)="dostuff()" [icon]="'send'" [text]="'Submit'"></ux-text>
+    <ux-text [(text)]="user.username" [icon]="'account_circle'" [label]="'Username'"></ux-text>
+    <ux-text [(text)]="user.password" [icon]="'vpn_key'" [label]="'Password'"></ux-text>
      <a class="btn-large waves-effect waves-light">button</a>
     <a class="waves-effect waves-light btn"><i class="material-icons left">save</i>Save</a>
 </div>
